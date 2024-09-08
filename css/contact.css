@@ -1,0 +1,105 @@
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --primary-color: #21e786;
+    --secondary-color: #141b22;
+    --third-color: #040b11;
+    --white-color: #fff;
+    --main-tran: 0.5s;
+}
+/* end global rules  */
+
+/* start contact  */
+.contact-us {
+    padding: 50px 0;
+    padding-bottom: 100px;
+    background-color: var(--third-color);
+}
+.contact-us .container{
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-color);
+    align-items: center;
+}
+@media (max-width:992px) {
+    .contact-us .container{
+        flex-direction: column;
+    }
+}
+.contact-us .left{
+    width:40%;
+}
+@media (max-width:992px) {
+    .contact-us .left{
+        width: 100%;
+    }
+}
+.contact-us .left h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.contact-us .left p{
+    margin-bottom: 20px;
+}
+.contact-us form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.contact-us form input{
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: var(--white-color);
+    width: 100%;
+    background-color: transparent;
+
+}
+.contact-us form textarea{
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: var(--white-color);
+}
+.contact-us form button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--main-tran);
+    -webkit-transition: var(--main-tran);
+    -moz-transition: var(--main-tran);
+    -ms-transition: var(--main-tran);
+    -o-transition: var(--main-tran);
+}
+.contact-us form button:hover{
+    background-color: var(--secondary-color);
+}
+.contact-us .right img{
+    max-width: 100%;
+}
+/* end contact  */
